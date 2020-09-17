@@ -1,4 +1,4 @@
-16927319741455092
+16932128637217092
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46109,6 +46109,20 @@ Horizontal_DPDT
 7
 7
 Eurorack
+Horizontal_SPDT
+
+
+0
+5
+3
+Eurorack
+Horizontal_SPDT_2MS5T2B2M7RE
+
+
+0
+4
+4
+Eurorack
 PJ301BM
 
 
@@ -46122,6 +46136,13 @@ PJ302M
 0
 3
 3
+Eurorack
+Variable_Capacitor_W6.5mm_P5.00mm
+C, Rect series, Radial, pin pitch=5.00mm, , length*width=7*6.5mm^2, Capacitor
+C Rect series Radial pin pitch 5.00mm  length 7mm width 6.5mm Capacitor
+0
+2
+2
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
