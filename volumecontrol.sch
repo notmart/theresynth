@@ -647,7 +647,7 @@ $EndComp
 Wire Wire Line
 	2050 2150 2050 1650
 Connection ~ 2050 1650
-Text GLabel 9750 2900 2    50   Output ~ 0
+Text GLabel 8950 2400 2    50   Output ~ 0
 VolumeControlOut
 Wire Wire Line
 	10200 1850 9850 1850
@@ -869,22 +869,12 @@ Wire Wire Line
 	7050 5300 7300 5300
 Connection ~ 7300 5300
 Wire Wire Line
-	8950 2800 8150 2800
-Connection ~ 8150 2800
+	8950 2400 8150 2400
 Connection ~ 8150 1750
 Wire Wire Line
 	8150 1750 8150 2400
 Wire Wire Line
 	8950 900  8150 900 
-Wire Wire Line
-	9550 2900 9750 2900
-Wire Wire Line
-	8950 3250 8950 3000
-Wire Wire Line
-	8950 3250 9550 3250
-Wire Wire Line
-	9550 3250 9550 2900
-Connection ~ 9550 2900
 $Comp
 L Amplifier_Operational:TL074 U2
 U 5 1 5E68EEC6
@@ -894,17 +884,6 @@ F 1 "TL074" H 8908 5555 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 8950 5600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8950 5600 50  0001 C CNN
 	5    8950 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL074 U5
-U 4 1 5F7B59C8
-P 9250 2900
-F 0 "U5" H 9250 3267 50  0000 C CNN
-F 1 "TL074" H 9250 3176 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9200 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9300 3100 50  0001 C CNN
-	4    9250 2900
 	1    0    0    -1  
 $EndComp
 $Comp
