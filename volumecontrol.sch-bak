@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -195,34 +195,34 @@ $EndComp
 $Comp
 L Device:LED D4
 U 1 1 5E6EC66A
-P 9150 1100
-F 0 "D4" H 9143 1316 50  0000 C CNN
-F 1 "LED" H 9143 1225 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 9150 1100 50  0001 C CNN
-F 3 "~" H 9150 1100 50  0001 C CNN
-	1    9150 1100
+P 9750 1100
+F 0 "D4" H 9743 1316 50  0000 C CNN
+F 1 "LED" H 9743 1225 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 9750 1100 50  0001 C CNN
+F 3 "~" H 9750 1100 50  0001 C CNN
+	1    9750 1100
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR056
 U 1 1 5E6F56A0
-P 9300 1100
-F 0 "#PWR056" H 9300 850 50  0001 C CNN
-F 1 "GND" V 9305 972 50  0000 R CNN
-F 2 "" H 9300 1100 50  0001 C CNN
-F 3 "" H 9300 1100 50  0001 C CNN
-	1    9300 1100
+P 9900 1100
+F 0 "#PWR056" H 9900 850 50  0001 C CNN
+F 1 "GND" V 9905 972 50  0000 R CNN
+F 2 "" H 9900 1100 50  0001 C CNN
+F 3 "" H 9900 1100 50  0001 C CNN
+	1    9900 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R54
 U 1 1 5E72F23D
-P 8850 1100
-F 0 "R54" V 8643 1100 50  0000 C CNN
-F 1 "1k" V 8734 1100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8780 1100 50  0001 C CNN
-F 3 "~" H 8850 1100 50  0001 C CNN
-	1    8850 1100
+P 9450 1100
+F 0 "R54" V 9243 1100 50  0000 C CNN
+F 1 "1k" V 9334 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9380 1100 50  0001 C CNN
+F 3 "~" H 9450 1100 50  0001 C CNN
+	1    9450 1100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -582,8 +582,6 @@ $EndComp
 Wire Wire Line
 	2050 2150 2050 1650
 Connection ~ 2050 1650
-Text GLabel 8100 2500 2    50   Output ~ 0
-VolumeControlOut
 Wire Wire Line
 	9350 1950 9000 1950
 Wire Wire Line
@@ -631,7 +629,7 @@ Text Notes 5450 1550 0    50   ~ 0
 Amplifier
 Text Notes 5250 3250 0    50   ~ 0
 Noise Reduction Filter\nPre and post amp
-Text Notes 9500 1350 0    50   ~ 0
+Text Notes 10100 1350 0    50   ~ 0
 VC1 Led
 Text Notes 9750 1800 0    50   ~ 0
 CV1 out
@@ -776,12 +774,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U3
 U 1 1 5E7B51FF
-P 8400 1100
-F 0 "U3" H 8400 809 50  0000 C CNN
-F 1 "TL072" H 8400 691 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8350 1200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8450 1300 50  0001 C CNN
-	1    8400 1100
+P 9000 1100
+F 0 "U3" H 9000 809 50  0000 C CNN
+F 1 "TL072" H 9000 691 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8950 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9050 1300 50  0001 C CNN
+	1    9000 1100
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -817,18 +815,12 @@ F 3 "" H 8100 1850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 1950 8700 1450
+	8700 1000 8700 750 
 Wire Wire Line
-	8700 1450 8100 1450
+	8700 750  9300 750 
 Wire Wire Line
-	8100 1450 8100 1200
-Wire Wire Line
-	8100 1000 8100 750 
-Wire Wire Line
-	8100 750  8700 750 
-Wire Wire Line
-	8700 750  8700 1100
-Connection ~ 8700 1100
+	9300 750  9300 1100
+Connection ~ 9300 1100
 $Comp
 L Device:L L8
 U 1 1 5F2C25F8
@@ -887,4 +879,8 @@ F 3 "~" H 6300 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 2400 6100 2100
+Text HLabel 8100 2500 2    50   Output ~ 0
+VolumeControlOut
+Wire Wire Line
+	8700 1200 8700 1950
 $EndSCHEMATC

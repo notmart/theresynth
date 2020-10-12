@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -333,4 +333,99 @@ F 3 "" H 3850 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 3000 3750 3000
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 5F861DD1
+P 6300 1600
+F 0 "U1" H 6258 1646 50  0000 L CNN
+F 1 "TL074" H 6258 1555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6250 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6350 1800 50  0001 C CNN
+	5    6300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F861DD7
+P 6200 1300
+F 0 "#PWR?" H 6200 1150 50  0001 C CNN
+F 1 "+12V" H 6215 1473 50  0000 C CNN
+F 2 "" H 6200 1300 50  0001 C CNN
+F 3 "" H 6200 1300 50  0001 C CNN
+	1    6200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5F861DDD
+P 6200 1900
+F 0 "#PWR?" H 6200 2000 50  0001 C CNN
+F 1 "-12V" H 6215 2073 50  0000 C CNN
+F 2 "" H 6200 1900 50  0001 C CNN
+F 3 "" H 6200 1900 50  0001 C CNN
+	1    6200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F861DE3
+P 5800 1300
+AR Path="/5F35ADD1/5F861DE3" Ref="C?"  Part="1" 
+AR Path="/5F861DE3" Ref="C?"  Part="1" 
+AR Path="/5F7BBEAA/5F861DE3" Ref="C20"  Part="1" 
+F 0 "C20" H 5915 1346 50  0000 L CNN
+F 1 "100n" H 5915 1255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5838 1150 50  0001 C CNN
+F 3 "~" H 5800 1300 50  0001 C CNN
+	1    5800 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F861DE9
+P 5650 1300
+AR Path="/5F35ADD1/5F861DE9" Ref="#PWR?"  Part="1" 
+AR Path="/5F861DE9" Ref="#PWR?"  Part="1" 
+AR Path="/5F7BBEAA/5F861DE9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5650 1050 50  0001 C CNN
+F 1 "GND" H 5655 1127 50  0000 C CNN
+F 2 "" H 5650 1300 50  0001 C CNN
+F 3 "" H 5650 1300 50  0001 C CNN
+	1    5650 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F861DEF
+P 5800 1900
+AR Path="/5F35ADD1/5F861DEF" Ref="C?"  Part="1" 
+AR Path="/5F861DEF" Ref="C?"  Part="1" 
+AR Path="/5F7BBEAA/5F861DEF" Ref="C21"  Part="1" 
+F 0 "C21" H 5915 1946 50  0000 L CNN
+F 1 "100n" H 5915 1855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5838 1750 50  0001 C CNN
+F 3 "~" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F861DF5
+P 5650 1900
+AR Path="/5F35ADD1/5F861DF5" Ref="#PWR?"  Part="1" 
+AR Path="/5F861DF5" Ref="#PWR?"  Part="1" 
+AR Path="/5F7BBEAA/5F861DF5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5650 1650 50  0001 C CNN
+F 1 "GND" H 5655 1727 50  0000 C CNN
+F 2 "" H 5650 1900 50  0001 C CNN
+F 3 "" H 5650 1900 50  0001 C CNN
+	1    5650 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 1900 6200 1900
+Wire Wire Line
+	5950 1300 6200 1300
+Connection ~ 6200 1300
+Connection ~ 6200 1900
 $EndSCHEMATC
