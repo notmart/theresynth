@@ -514,7 +514,7 @@ L Device:R R36
 U 1 1 5F8EBD3B
 P 5150 1900
 F 0 "R36" H 5220 1946 50  0000 L CNN
-F 1 "1k" H 5220 1855 50  0000 L CNN
+F 1 "10k" H 5220 1855 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5080 1900 50  0001 C CNN
 F 3 "~" H 5150 1900 50  0001 C CNN
 	1    5150 1900
@@ -658,7 +658,7 @@ U 1 1 5F8EBD85
 P 2050 4950
 F 0 "RV4" V 1843 4950 50  0000 C CNN
 F 1 "10k" V 1934 4950 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 2050 4950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386P_Vertical" H 2050 4950 50  0001 C CNN
 F 3 "~" H 2050 4950 50  0001 C CNN
 	1    2050 4950
 	1    0    0    -1  
@@ -668,8 +668,8 @@ L Device:R_POT RV6
 U 1 1 5F8EBD8B
 P 5450 2050
 F 0 "RV6" V 5243 2050 50  0000 C CNN
-F 1 "10k" V 5334 2050 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 5450 2050 50  0001 C CNN
+F 1 "100k" V 5334 2050 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386P_Vertical" H 5450 2050 50  0001 C CNN
 F 3 "~" H 5450 2050 50  0001 C CNN
 	1    5450 2050
 	0    -1   1    0   
@@ -679,8 +679,6 @@ Wire Wire Line
 Connection ~ 3900 2650
 Connection ~ 4200 2650
 Connection ~ 4200 2950
-Text Notes 5550 3450 0    50   ~ 0
-TODO: si puo' togliere ultmo filtro?
 Wire Wire Line
 	4800 1750 4800 1900
 Wire Wire Line
@@ -852,7 +850,7 @@ U 1 1 5F8EBDFA
 P 4050 4150
 F 0 "RV11" H 4390 4196 50  0000 R CNN
 F 1 "100k" H 4390 4105 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 4050 4150 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386P_Vertical" H 4050 4150 50  0001 C CNN
 F 3 "~" H 4050 4150 50  0001 C CNN
 	1    4050 4150
 	1    0    0    1   
@@ -888,4 +886,8 @@ Wire Wire Line
 Connection ~ 5700 4400
 Wire Wire Line
 	7400 5000 7400 5550
+Text Notes 6400 5500 0    50   ~ 0
+Headphones
+Text Notes 6650 4950 0    50   ~ 0
+To External\nAmplifier
 $EndSCHEMATC
