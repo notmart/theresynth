@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name theresynth-frontpanel)(type KiCad)(uri ${KIPRJMOD}/theresynth-frontpanel.pretty)(options "")(descr ""))
+)

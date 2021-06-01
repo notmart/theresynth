@@ -27,35 +27,35 @@ $EndComp
 $Comp
 L Device:R_POT RV3
 U 1 1 5F8EBC39
-P 1900 3050
-F 0 "RV3" V 1693 3050 50  0000 C CNN
-F 1 "100k" V 1784 3050 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 1900 3050 50  0001 C CNN
-F 3 "~" H 1900 3050 50  0001 C CNN
-	1    1900 3050
-	-1   0    0    1   
+P 1750 3200
+F 0 "RV3" V 1543 3200 50  0000 C CNN
+F 1 "100k" V 1634 3200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 1750 3200 50  0001 C CNN
+F 3 "~" H 1750 3200 50  0001 C CNN
+	1    1750 3200
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R23
 U 1 1 5F8EBC3F
-P 1900 2750
-F 0 "R23" V 1693 2750 50  0000 C CNN
-F 1 "22k" V 1784 2750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1830 2750 50  0001 C CNN
-F 3 "~" H 1900 2750 50  0001 C CNN
-	1    1900 2750
-	-1   0    0    1   
+P 1750 3500
+F 0 "R23" V 1543 3500 50  0000 C CNN
+F 1 "22k" V 1634 3500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1680 3500 50  0001 C CNN
+F 3 "~" H 1750 3500 50  0001 C CNN
+	1    1750 3500
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5F8EBC45
-P 1900 2600
-F 0 "#PWR0105" H 1900 2350 50  0001 C CNN
-F 1 "GND" H 1905 2427 50  0000 C CNN
-F 2 "" H 1900 2600 50  0001 C CNN
-F 3 "" H 1900 2600 50  0001 C CNN
-	1    1900 2600
-	-1   0    0    1   
+P 1750 3650
+F 0 "#PWR0105" H 1750 3400 50  0001 C CNN
+F 1 "GND" H 1755 3477 50  0000 C CNN
+F 2 "" H 1750 3650 50  0001 C CNN
+F 3 "" H 1750 3650 50  0001 C CNN
+	1    1750 3650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R25
@@ -163,7 +163,7 @@ L Device:R R26
 U 1 1 5F8EBC82
 P 3300 3150
 F 0 "R26" H 3370 3196 50  0000 L CNN
-F 1 "10k" H 3370 3105 50  0000 L CNN
+F 1 "1k" H 3370 3105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 3150 50  0001 C CNN
 F 3 "~" H 3300 3150 50  0001 C CNN
 	1    3300 3150
@@ -514,7 +514,7 @@ L Device:R R36
 U 1 1 5F8EBD3B
 P 5150 1900
 F 0 "R36" H 5220 1946 50  0000 L CNN
-F 1 "10k" H 5220 1855 50  0000 L CNN
+F 1 "1k" H 5220 1855 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5080 1900 50  0001 C CNN
 F 3 "~" H 5150 1900 50  0001 C CNN
 	1    5150 1900
@@ -587,21 +587,21 @@ Wire Wire Line
 	5750 1450 5750 2050
 Connection ~ 5750 2050
 Wire Wire Line
-	5700 6000 6300 6000
+	5500 6200 6100 6200
 Wire Wire Line
-	6300 6000 6300 5650
+	6100 6200 6100 5850
 $Comp
 L Amplifier_Operational:TL074 U?
 U 4 1 5F8EBD64
-P 6000 5650
+P 5800 5850
 AR Path="/5F35ADD1/5F8EBD64" Ref="U?"  Part="4" 
 AR Path="/5F8EBD64" Ref="U?"  Part="4" 
 AR Path="/5F878120/5F8EBD64" Ref="U2"  Part="4" 
-F 0 "U2" H 6000 6017 50  0000 C CNN
-F 1 "TL074" H 6000 5926 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5950 5750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6050 5850 50  0001 C CNN
-	4    6000 5650
+F 0 "U2" H 5800 6217 50  0000 C CNN
+F 1 "TL074" H 5800 6126 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5750 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5850 6050 50  0001 C CNN
+	4    5800 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -622,27 +622,25 @@ Wire Wire Line
 $Comp
 L Device:R_POT RV7
 U 1 1 5F8EBD73
-P 6600 5850
-F 0 "RV7" V 6393 5850 50  0000 C CNN
-F 1 "100k" V 6484 5850 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 6600 5850 50  0001 C CNN
-F 3 "~" H 6600 5850 50  0001 C CNN
-	1    6600 5850
-	1    0    0    1   
+P 5500 5200
+F 0 "RV7" V 5293 5200 50  0000 C CNN
+F 1 "100k" V 5384 5200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 5500 5200 50  0001 C CNN
+F 3 "~" H 5500 5200 50  0001 C CNN
+	1    5500 5200
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 5F8EBD79
-P 6600 6000
-F 0 "#PWR0115" H 6600 5750 50  0001 C CNN
-F 1 "GND" H 6605 5827 50  0000 C CNN
-F 2 "" H 6600 6000 50  0001 C CNN
-F 3 "" H 6600 6000 50  0001 C CNN
-	1    6600 6000
-	-1   0    0    -1  
+P 5350 5200
+F 0 "#PWR0115" H 5350 4950 50  0001 C CNN
+F 1 "GND" H 5355 5027 50  0000 C CNN
+F 2 "" H 5350 5200 50  0001 C CNN
+F 3 "" H 5350 5200 50  0001 C CNN
+	1    5350 5200
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	2350 3200 1900 3200
 Wire Wire Line
 	2650 3900 2650 3200
 Wire Wire Line
@@ -702,8 +700,7 @@ F 3 "" H 4800 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 5750 5700 6000
-Connection ~ 6300 5650
+	5500 5950 5500 6200
 Connection ~ 2600 4950
 $Comp
 L Device:R_POT RV10
@@ -731,18 +728,15 @@ Wire Wire Line
 	1750 3050 1750 2300
 Wire Wire Line
 	1750 2300 3300 2300
-Connection ~ 1750 2300
-Wire Wire Line
-	1750 2250 1750 2300
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5F8EBDB8
-P 1750 2250
-F 0 "TP3" H 1808 2368 50  0000 L CNN
-F 1 "TestPoint" H 1808 2277 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1950 2250 50  0001 C CNN
-F 3 "~" H 1950 2250 50  0001 C CNN
-	1    1750 2250
+P 2000 2850
+F 0 "TP3" H 2058 2968 50  0000 L CNN
+F 1 "TestPoint" H 2058 2877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2200 2850 50  0001 C CNN
+F 3 "~" H 2200 2850 50  0001 C CNN
+	1    2000 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -813,9 +807,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 4100 6150 4100
 Wire Wire Line
-	6600 5650 6600 5700
-Wire Wire Line
-	6300 5650 6600 5650
+	5700 5200 5650 5200
 $Comp
 L power:-12V #PWR0121
 U 1 1 5F8EBDE9
@@ -882,12 +874,24 @@ RawAudioIn
 Wire Wire Line
 	1300 3050 1150 3050
 Wire Wire Line
-	5700 4400 5700 5550
-Connection ~ 5700 4400
-Wire Wire Line
 	7400 5000 7400 5550
-Text Notes 6400 5500 0    50   ~ 0
+Text Notes 6200 5700 0    50   ~ 0
 Headphones
 Text Notes 6650 4950 0    50   ~ 0
 To External\nAmplifier
+Wire Wire Line
+	5700 4400 5700 5200
+Connection ~ 5700 4400
+Wire Wire Line
+	5500 5350 5500 5750
+Wire Wire Line
+	6750 5850 6100 5850
+Connection ~ 6100 5850
+Wire Wire Line
+	1900 3200 2000 3200
+Wire Wire Line
+	2000 2850 2000 3200
+Connection ~ 2000 3200
+Wire Wire Line
+	2000 3200 2350 3200
 $EndSCHEMATC

@@ -27,38 +27,36 @@ $EndComp
 $Comp
 L Device:L L3
 U 1 1 5F0744B5
-P 850 2050
-F 0 "L3" H 902 2096 50  0000 L CNN
-F 1 "4.8mH" H 902 2005 50  0000 L CNN
-F 2 "Inductor_THT:L_Axial_L12.0mm_D5.0mm_P15.24mm_Horizontal_Fastron_MISC" H 850 2050 50  0001 C CNN
-F 3 "~" H 850 2050 50  0001 C CNN
-	1    850  2050
+P 600 2050
+F 0 "L3" H 652 2096 50  0000 L CNN
+F 1 "4.8mH" H 652 2005 50  0000 L CNN
+F 2 "Inductor_THT:L_Axial_L12.0mm_D5.0mm_P15.24mm_Horizontal_Fastron_MISC" H 600 2050 50  0001 C CNN
+F 3 "~" H 600 2050 50  0001 C CNN
+	1    600  2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L L2
 U 1 1 5F075EBD
-P 850 1750
-F 0 "L2" H 902 1796 50  0000 L CNN
-F 1 "10mH" H 902 1705 50  0000 L CNN
-F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 850 1750 50  0001 C CNN
-F 3 "~" H 850 1750 50  0001 C CNN
-	1    850  1750
+P 600 1750
+F 0 "L2" H 652 1796 50  0000 L CNN
+F 1 "10mH" H 652 1705 50  0000 L CNN
+F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 600 1750 50  0001 C CNN
+F 3 "~" H 600 1750 50  0001 C CNN
+	1    600  1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Antenna AE1
 U 1 1 5F077059
-P 850 1100
-F 0 "AE1" H 930 1089 50  0000 L CNN
-F 1 "Antenna" H 930 998 50  0000 L CNN
-F 2 "Eurorack:Connector_F" H 850 1100 50  0001 C CNN
-F 3 "~" H 850 1100 50  0001 C CNN
-	1    850  1100
+P 900 800
+F 0 "AE1" H 980 789 50  0000 L CNN
+F 1 "Antenna" H 980 698 50  0000 L CNN
+F 2 "Eurorack:Connector_F" H 900 800 50  0001 C CNN
+F 3 "~" H 900 800 50  0001 C CNN
+	1    900  800 
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	850  2200 1300 2200
 $Comp
 L Device:C C6
 U 1 1 5F0779F4
@@ -92,7 +90,6 @@ F 3 "~" H 2100 1400 50  0001 C CNN
 	1    2100 1400
 	0    -1   -1   0   
 $EndComp
-Connection ~ 850  1900
 Connection ~ 1950 1900
 $Comp
 L Device:R R7
@@ -389,7 +386,7 @@ L Device:C C14
 U 1 1 5F0B6D2A
 P 4000 2850
 F 0 "C14" H 4115 2896 50  0000 L CNN
-F 1 "10p" H 4115 2805 50  0000 L CNN
+F 1 "22p" H 4115 2805 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 4038 2700 50  0001 C CNN
 F 3 "~" H 4000 2850 50  0001 C CNN
 	1    4000 2850
@@ -400,7 +397,7 @@ L Device:C C15
 U 1 1 5F0B77D8
 P 4000 3450
 F 0 "C15" H 4115 3496 50  0000 L CNN
-F 1 "10p" H 4115 3405 50  0000 L CNN
+F 1 "22p" H 4115 3405 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 4038 3300 50  0001 C CNN
 F 3 "~" H 4000 3450 50  0001 C CNN
 	1    4000 3450
@@ -408,7 +405,7 @@ F 3 "~" H 4000 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 3150 4150 3150
-Text Notes 1300 1100 0    50   ~ 0
+Text Notes 1550 1050 0    50   ~ 0
 Variable pitch oscillator
 Text Notes 550  3600 0    50   ~ 0
 Fixed pitch oscillator
@@ -638,12 +635,12 @@ Connection ~ 3450 4300
 $Comp
 L Device:C C4
 U 1 1 5F360668
-P 1650 1900
-F 0 "C4" V 1902 1900 50  0000 C CNN
-F 1 "100p" V 1811 1900 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1688 1750 50  0001 C CNN
-F 3 "~" H 1650 1900 50  0001 C CNN
-	1    1650 1900
+P 1750 1900
+F 0 "C4" V 2002 1900 50  0000 C CNN
+F 1 "220p" V 1911 1900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1788 1750 50  0001 C CNN
+F 3 "~" H 1750 1900 50  0001 C CNN
+	1    1750 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -651,14 +648,12 @@ L Device:C C5
 U 1 1 5F36163E
 P 1650 3900
 F 0 "C5" V 1398 3900 50  0000 C CNN
-F 1 "100p" V 1489 3900 50  0000 C CNN
+F 1 "330p" V 1489 3900 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1688 3750 50  0001 C CNN
 F 3 "~" H 1650 3900 50  0001 C CNN
 	1    1650 3900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1800 1900 1950 1900
 Wire Wire Line
 	1950 3900 1800 3900
 Wire Wire Line
@@ -687,35 +682,35 @@ Wire Wire Line
 $Comp
 L Device:L L5
 U 1 1 5F2F78DE
-P 1000 1600
-F 0 "L5" H 1052 1646 50  0000 L CNN
-F 1 "10mH" H 1052 1555 50  0000 L CNN
-F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 1000 1600 50  0001 C CNN
-F 3 "~" H 1000 1600 50  0001 C CNN
-	1    1000 1600
+P 750 1600
+F 0 "L5" H 802 1646 50  0000 L CNN
+F 1 "10mH" H 802 1555 50  0000 L CNN
+F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 750 1600 50  0001 C CNN
+F 3 "~" H 750 1600 50  0001 C CNN
+	1    750  1600
 	0    1    -1   0   
 $EndComp
 $Comp
 L Device:L L6
 U 1 1 5F2FEC2E
-P 1150 1450
-F 0 "L6" H 1202 1496 50  0000 L CNN
-F 1 "10mH" H 1202 1405 50  0000 L CNN
-F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 1150 1450 50  0001 C CNN
-F 3 "~" H 1150 1450 50  0001 C CNN
-	1    1150 1450
+P 900 1450
+F 0 "L6" H 952 1496 50  0000 L CNN
+F 1 "10mH" H 952 1405 50  0000 L CNN
+F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 900 1450 50  0001 C CNN
+F 3 "~" H 900 1450 50  0001 C CNN
+	1    900  1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L L4
 U 1 1 5F30125F
-P 1000 1300
-F 0 "L4" H 1052 1346 50  0000 L CNN
-F 1 "10mH" H 1052 1255 50  0000 L CNN
-F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 1000 1300 50  0001 C CNN
-F 3 "~" H 1000 1300 50  0001 C CNN
-	1    1000 1300
-	0    -1   -1   0   
+P 900 1150
+F 0 "L4" H 952 1196 50  0000 L CNN
+F 1 "10mH" H 952 1105 50  0000 L CNN
+F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 900 1150 50  0001 C CNN
+F 3 "~" H 900 1150 50  0001 C CNN
+	1    900  1150
+	1    0    0    -1  
 $EndComp
 $Sheet
 S 1000 5650 4300 1850
@@ -731,12 +726,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5F45EA18
-P 1300 2200
-F 0 "#PWR01" H 1300 1950 50  0001 C CNN
-F 1 "GND" H 1305 2027 50  0000 C CNN
-F 2 "" H 1300 2200 50  0001 C CNN
-F 3 "" H 1300 2200 50  0001 C CNN
-	1    1300 2200
+P 1000 2200
+F 0 "#PWR01" H 1000 1950 50  0001 C CNN
+F 1 "GND" H 1005 2027 50  0000 C CNN
+F 2 "" H 1000 2200 50  0001 C CNN
+F 3 "" H 1000 2200 50  0001 C CNN
+	1    1000 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -851,21 +846,15 @@ F 3 "~" H 2950 4100 50  0001 C CNN
 	1    2950 4100
 	0    1    1    0   
 $EndComp
-Connection ~ 1300 2200
-Wire Wire Line
-	1500 1900 1300 1900
-Wire Wire Line
-	850  1900 1300 1900
-Connection ~ 1300 1900
 $Comp
 L Device:C C2
 U 1 1 5F07386B
-P 1300 2050
-F 0 "C2" H 1415 2096 50  0000 L CNN
-F 1 "22p" H 1415 2005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1338 1900 50  0001 C CNN
-F 3 "~" H 1300 2050 50  0001 C CNN
-	1    1300 2050
+P 1000 2050
+F 0 "C2" H 1115 2096 50  0000 L CNN
+F 1 "22p" H 1115 2005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1038 1900 50  0001 C CNN
+F 3 "~" H 1000 2050 50  0001 C CNN
+	1    1000 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1019,4 +1008,15 @@ Wire Wire Line
 Wire Wire Line
 	4000 4300 4000 3600
 Connection ~ 4000 4300
+Wire Wire Line
+	1000 1900 600  1900
+Connection ~ 1000 1900
+Connection ~ 600  1900
+Wire Wire Line
+	600  2200 1000 2200
+Connection ~ 1000 2200
+Wire Wire Line
+	1950 1900 1900 1900
+Wire Wire Line
+	1000 1900 1600 1900
 $EndSCHEMATC

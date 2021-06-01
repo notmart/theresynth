@@ -1,0 +1,25 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.5-5.1.5*
+G04 #@! TF.CreationDate,2020-10-28T11:58:53+01:00*
+G04 #@! TF.ProjectId,theresynth-backpanel,74686572-6573-4796-9e74-682d6261636b,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Copper,L1,Top*
+G04 #@! TF.FilePolarity,Positive*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.1.5-5.1.5) date 2020-10-28 11:58:53*
+%MOMM*%
+%LPD*%
+G04 APERTURE LIST*
+%ADD10C,5.500000*%
+%ADD11C,9.000000*%
+%ADD12C,14.000000*%
+G04 APERTURE END LIST*
+D10*
+X85200000Y-53000000D03*
+D11*
+X226300000Y-53000000D03*
+X186950000Y-53000000D03*
+X142850000Y-53000000D03*
+D12*
+X56500000Y-51500000D03*
+M02*

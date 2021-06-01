@@ -63,8 +63,8 @@ AR Path="/5F814ECD" Ref="C?"  Part="1"
 AR Path="/5F7FCB67/5F814ECD" Ref="C?"  Part="1" 
 AR Path="/5F7BBEAA/5F814ECD" Ref="C40"  Part="1" 
 F 0 "C40" H 3218 1496 50  0000 L CNN
-F 1 "4700u" H 3218 1405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D16.0mm_H31.5mm_P7.50mm" H 3138 1300 50  0001 C CNN
+F 1 "3300u" H 3218 1405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 3138 1300 50  0001 C CNN
 F 3 "~" H 3100 1450 50  0001 C CNN
 	1    3100 1450
 	-1   0    0    -1  
@@ -77,24 +77,10 @@ AR Path="/5F814ED3" Ref="C?"  Part="1"
 AR Path="/5F7FCB67/5F814ED3" Ref="C?"  Part="1" 
 AR Path="/5F7BBEAA/5F814ED3" Ref="C41"  Part="1" 
 F 0 "C41" H 3218 1796 50  0000 L CNN
-F 1 "4700u" H 3218 1705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D16.0mm_H31.5mm_P7.50mm" H 3138 1600 50  0001 C CNN
+F 1 "3300u" H 3218 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 3138 1600 50  0001 C CNN
 F 3 "~" H 3100 1750 50  0001 C CNN
 	1    3100 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F814ED9
-P 3450 1750
-AR Path="/5F814ED9" Ref="C?"  Part="1" 
-AR Path="/5F7FCB67/5F814ED9" Ref="C?"  Part="1" 
-AR Path="/5F7BBEAA/5F814ED9" Ref="C42"  Part="1" 
-F 0 "C42" H 3565 1796 50  0000 L CNN
-F 1 "1u" H 3565 1705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W6.0mm_P5.00mm" H 3488 1600 50  0001 C CNN
-F 3 "~" H 3450 1750 50  0001 C CNN
-	1    3450 1750
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -125,18 +111,8 @@ F 3 "~" H 4400 1450 50  0001 C CNN
 	1    4400 1450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 1600 3450 1600
 Connection ~ 3100 1600
-Wire Wire Line
-	3450 1600 3850 1600
-Connection ~ 3450 1600
 Connection ~ 4400 1600
-Wire Wire Line
-	3550 1900 3450 1900
-Wire Wire Line
-	3450 1900 3100 1900
-Connection ~ 3450 1900
 Wire Wire Line
 	3100 1900 2850 1900
 Connection ~ 3100 1900
@@ -428,4 +404,8 @@ Wire Wire Line
 	5950 1300 6200 1300
 Connection ~ 6200 1300
 Connection ~ 6200 1900
+Wire Wire Line
+	3100 1600 3850 1600
+Wire Wire Line
+	3100 1900 3550 1900
 $EndSCHEMATC
